@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+}
+$purple: #dc50ff;
+$black: #1A181B;
+$white: #FFFFFF;
+.boldFont{
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+}
+
+body{
+    background-color: $black;
+    background-image: 
+        linear-gradient(0deg, transparent 99px, #2A282B 99px, #2A282B 150px),
+        linear-gradient(90deg, transparent 99px, #2A282B 99px, #2A282B 150px);
+    background-size: 100px 100px;
+    background-position: 0 0;
+    color: $white;
+    margin:0;
+    padding:0;
+display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+img{
+    width:100px;
+    height:100px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:110px;
+    background-color: $black;
+    border-bottom:1px solid #2A282B;
+}
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+h1{
+    font-size:60px;
+    margin:0;
+    padding:0;
+    margin-top:20px;
+}
+pre{
+    background-color: #282C34;
+    border: none !important;
+    outline: none !important;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 20px;
+    overflow: hidden;
+    max-width: 600px;
+    text-align: left;
+}
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.code-wrapper{
+    max-width: 600px;
+    margin: 30px 20px;
+}
+.code-tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #282C34;
+}
+.buttons{
+    padding-bottom:100px;
+}
+.code-tab{
+    background-color: rgba(255, 255, 255, 0.05);
+    color: $white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+.code-tab:hover{
+    background-color: #282C34;
+}
+.code-tab.active{
+    background-color: #282C34;
+    border-bottom-color: $purple;
+}
+.code-block{
+    background-color: #282C34;
+    border: none !important;
+    outline: none !important;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+    text-align: left;
+    display: none;
+}
+.code-block.active{
+    display: block;
+}
+.getDatabase{
+    background-color: $white;
+    color: $black;
+    border: 2px solid $white;
+    padding: 12px 28px;
+    margin: 10px 8px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.getDatabase:hover{
+    background-color: transparent;
+    color: $white;
+}
+.getDatabase.getPurple{
+    background-color: $purple;
+    color: $white;
+    border: 2px solid $purple;
+}
+.getDatabase.getPurple:hover{
+    background-color: transparent;
+    color: $purple;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeInUp 0.45s ease-out 0.1s both;
+}
+
+main > p {
+    animation: fadeInUp 0.45s ease-out 0.2s both;
+}
+
+.buttons {
+    animation: fadeInUp 0.45s ease-out 0.2s both;
+}
+
+::-moz-selection {
+  color: #dc50ff;
+}
+::selection {
+  color: #dc50ff;
+}
+
+::-moz-selection {
+  color: #dc50ff;
+}
